@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wmainheader"><u>WORKSHOP PROGRAMME</u></string>
+    <string name="wsubheader">The workshops improve the skills of a persson regardless of his talent,degree and field.\n
+          You can learn new things in the field of technology .All it requires is the interest to learn the things</string>
+    <string name="w1name">Mobile Development  ↓</string>
+    <string name="w2name">Artificial Intellegence ↓</string>
+    <string name="w3name">Augmented Reality ↓</string>
+    <string name="w1description">The best oppurtinity to hone your skills as an Android Developer</string>
+    <string name="w2description">The human replacement of the machines in the near future.Wanna take part in the brilliant future</string>
+    <string name="w3description">There is a differeent angle of viewing the things.The way that will rock the future</string>
+    <string name="w1details">Android App Development Workshop mainly focuses on how to use Android OS for building your own Android Application. Only the basic knowledge of programming is required for Android App Development, you do not have to be a geek for it! The workshop will start from the basics like
+        designing layouts and building complex layouts..</string>
+    <string name="w2details">Since the invention of computers or machines, their capability to
+        perform various tasks went on growing exponentially. Humans have developed the power of computer systems
+        in terms of their diverse working domains, their increasing speed, and reducing size with respect to time.
+        A branch of Computer Science named Artificial Intelligence pursues creating the computers or machines as intelligent as human beings.</string>
+    <string name="w3details">Augmented reality (AR) is a live direct or indirect view of a physical, real-world
+        environment whose elements are augmented (or supplemented) by computer-generated sensory input such as sound,
+        video, graphics or GPS data. It is related to a more general concept called mediated reality, in which a view of
+        reality is modified (possibly even diminished rather than augmented) by a computer.
+        As a result, the technology functions by enhancing one’s current perception of reality.</string>
+    <string name="w1date">19th February</string>
+    <string name="w2date">20th-February</string>
+    <string name="w3date">25th-February</string>
+    <string name="w1highlights">* Hands on Workshop\n* Practice with IDE\n* Tips and Tricks\n* Exclusive Debugging</string>
+    <string name="w1learn">* Android Working Procedure\n* Techniques involved in AOSP\n* And many more</string>
+    <string name="w2highlights">• Heads up Workshop\n• Practice with IDE\n* Tips and Tricks\n• Exclusive Debugging</string>
+    <string name="w2learn">* AI Working Procedure\n* Techniques involved in AI\n* And many more</string>
+    <string name="w3learn">* AR Working Procedure\n* Techniques involved in AR VR\n* And many more</string>
+    <string name="w3highlights">* Heads up Workshop\n* Practice with IDE\n* Tips and Tricks\n* Exclusive Debugging</string>
+
+
+
+
+</resources>

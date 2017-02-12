@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yashwanth.projectnothing.About.ContactsActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/app_bar">
+
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e4e4e4"
+        android:layout_below="@+id/appbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/eo"
+                style="@style/headers"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Organizing Team"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+
+
+            <RelativeLayout
+                android:id="@+id/HOD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eo"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_rounds">
+
+                <TextView
+                    android:id="@+id/hod"
+                    style="@style/headers"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Head Of The Department"
+                    android:textColor="@color/headTextColor" />
+
+                <include
+                    android:id="@+id/cs2"
+                    style="@style/paddings"
+                    layout="@layout/profile_template"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/hod"></include>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/staff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/HOD"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_rounds">
+
+                <TextView
+                    android:id="@+id/cs"
+                    style="@style/headers"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Coordinating Staff"
+                    android:textColor="@color/headTextColor" />
+
+                <include
+                    android:id="@+id/cs1"
+                    style="@style/paddings"
+                    layout="@layout/profile_template"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/cs"></include>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/students"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/staff"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/bg_rounds">
+
+                <include
+                    android:id="@+id/c1"
+                    style="@style/paddings"
+                    layout="@layout/profile_template"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/st"></include>
+
+                <include
+                    android:id="@+id/c2"
+                    style="@style/paddings"
+                    layout="@layout/profile_template"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/c1"></include>
+
+                <include
+                    android:id="@+id/c3"
+                    style="@style/paddings"
+                    layout="@layout/profile_template"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/c2"></include>
+
+                <include
+                    android:id="@+id/c4"
+                    style="@style/paddings"
+                    layout="@layout/profile_template"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/c3"></include>
+
+                <TextView
+                    android:id="@+id/st"
+                    style="@style/headers"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Student Team"
+                    android:textColor="@color/headTextColor"
+                   />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

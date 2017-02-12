@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/stickymarginUp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_workshops">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingBottom="40dp">
+
+            <RelativeLayout
+                android:id="@+id/outline_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
+                android:background="@drawable/bg_workshops"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/expdetails"
+                    style="@style/texts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/outline"
+                    android:layout_margin="2dp"
+                    android:padding="5dp"
+                    android:text="@string/w1details"
+                    android:textColor="#2d2d2d" />
+
+                <TextView
+                    android:id="@+id/outline"
+                    style="@style/h2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Outline"
+                    android:textColor="#033502"
+                    android:textStyle="italic" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/highlights_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/outline_layout"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_workshops"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/highlightsHead"
+                    style="@style/h2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Highlights"
+                    android:textColor="#033502"
+
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/exphighlights"
+                    style="@style/subheaders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/highlightsHead"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginStart="13dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/w1highlights"
+                    android:textColor="#2d2d2d"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/outcome_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_workshops"
+                android:padding="3dp"
+                android:layout_below="@+id/highlights_layout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/outHead"
+                    style="@style/h2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="Outcome"
+                    android:textColor="#033502"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/expoutcomes"
+                    style="@style/subheaders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/outHead"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:padding="5dp"
+                    android:text="@string/w1learn"
+                    android:textColor="#2d2d2d"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/outcome_layout"
+                android:id="@+id/rel"
+                >
+
+
+                <TextView
+                    android:id="@+id/datetext"
+                    style="@style/subheaders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DATE"
+                    android:textColor="#194014"
+                    android:textSize="20sp"
+                    android:typeface="monospace" />
+
+                <TextView
+                    android:id="@+id/date"
+                    style="@style/subheaders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/datetext"
+                    android:layout_alignBottom="@+id/datetext"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toEndOf="@+id/datetext"
+                    android:layout_toRightOf="@+id/datetext"
+                    android:padding="5dp"
+                    android:text="@string/w1date"
+                    android:textColor="#763a22"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/payOnline"
+                    android:text="Pay Online"
+                    android:layout_below="@+id/con"
+                    android:layout_margin="@dimen/margin"
+                    android:padding="3dp"
+                    android:elevation="3dp"
+                    android:layout_alignRight="@+id/con"
+                    android:typeface="monospace"/>
+
+                <include
+                    layout="@layout/contacts2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/con"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/datetext"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                </include>
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

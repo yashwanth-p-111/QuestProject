@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#f1f1f1"
+   android:layout_margin="@dimen/padding"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="Ya"
+        android:textSize="45sp"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_margin="@dimen/padding"
+        android:background="@drawable/bg_layout"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/textLetter" />
+
+    <TextView
+        android:text="Yashwanth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textLetter"
+        android:layout_toRightOf="@+id/textLetter"
+        style="@style/headers"
+        android:textSize="23sp"
+        android:textColor="#2d2d2d"
+        android:id="@+id/cName" />
+
+    <TextView
+        android:text="9658965896"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cName"
+        android:layout_margin="3dp"
+        android:layout_toRightOf="@+id/textLetter"
+        android:layout_toEndOf="@+id/textLetter"
+        style="@style/texts"
+        android:autoLink="phone"
+        android:textColor="@color/headTextColor"
+        android:id="@+id/pNo" />
+
+    <TextView
+        android:text="yashwanth123222@gmail.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/texts"
+        android:autoLink="email"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:textColorLink="#6c6c67"
+        android:layout_below="@id/pNo"
+        android:layout_alignLeft="@+id/pNo"
+        android:id="@+id/mail" />
+</RelativeLayout>

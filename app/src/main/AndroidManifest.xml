@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yashwanth.projectnothing">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".EventCode.MyApplication"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Home.SplashScreenActivity"
+            android:screenOrientation="portrait"
+           >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Home.HomeActivity"
+            android:hardwareAccelerated="true">
+
+        </activity>
+        <activity
+            android:name=".Otherjavafiles.WorkshopActivity"
+            android:launchMode="singleTop"
+            android:label="   Workshops">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".EventCode.EventActivity"
+            android:label="   Events"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home.HomeActivity" />
+        </activity>
+        <activity android:name=".EventCode.EventTemplateActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EventCode.EventActivity" />
+        </activity>
+        <activity
+            android:name=".About.ContactsActivity"
+            android:label="Coordinator Contacts">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".About.JAbtActivity"
+            android:label="   JNTUHCEH">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".About.ContactsActivity" />
+        </activity>
+        <activity
+            android:name=".About.QAbtActivity"
+            android:label="   QUEST">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".About.ContactsActivity" />
+        </activity>
+        <activity android:name=".Otherjavafiles.WebViewActivity" />
+
+    </application>
+
+</manifest>

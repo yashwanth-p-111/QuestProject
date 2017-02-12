@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_workshop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="com.example.yashwanth.projectnothing.Otherjavafiles.WorkshopActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/app_bar">
+
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/appbar"
+        android:layout_alignParentStart="true"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="30dp"
+            android:background="#e7f1faef"
+            >
+
+            <TextView
+                android:id="@+id/workHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="#203814"
+                android:text="@string/wmainheader" />
+
+            <TextView
+                android:id="@+id/workView"
+                android:textStyle="normal"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/workHead"
+                 android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:text="@string/wsubheader" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/workView">
+                <include
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    layout="@layout/withimage"
+                    android:id="@+id/w1"
+                    style="@style/stickymarginDown">
+
+                </include>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/l1"
+                 android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@id/w1"
+                    android:background="#d9ffd7"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REGISTER"
+                        android:background="@drawable/bg_workshops"
+                        android:typeface="monospace"
+                        android:layout_weight="1"
+                        android:id="@+id/reg1" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:text="MORE ▼"
+                        android:id="@+id/e1"
+                        android:alpha="0.8"
+                        android:background="@drawable/bg_workshops"
+                        android:typeface="monospace"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/expandableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/l1"
+
+                    app:ael_duration="600"
+                    app:ael_expanded="false"
+                    app:ael_interpolator="fastOutSlowIn"
+                    app:ael_orientation="vertical">
+
+                    <include
+                        layout="@layout/subworkshop"
+                        android:id="@+id/sub1">
+                    </include>
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+                <include
+                    android:id="@+id/w2"
+                    layout="@layout/withimage"
+                    style="@style/stickymarginDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/expandableLayout">
+
+                </include>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/l2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@id/w2"
+                    android:background="#d9ffd7"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REGISTER"
+                        android:background="@drawable/bg_workshops"
+                        android:typeface="monospace"
+                        android:layout_weight="1"
+                        android:id="@+id/reg2" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:text="MORE ▼"
+                        android:id="@+id/e2"
+                        android:alpha="0.8"
+                        android:background="@drawable/bg_workshops"
+                        android:typeface="monospace"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/expandableLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/l2"
+                    app:ael_duration="600"
+                    app:ael_expanded="false"
+                    app:ael_interpolator="fastOutSlowIn"
+                    app:ael_orientation="vertical">
+
+                    <include
+                        layout="@layout/subworkshop"
+                        android:id="@+id/sub2">
+                    </include>
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                <include
+                    android:id="@+id/w3"
+                    layout="@layout/withimage"
+                    android:layout_width="match_parent"
+                    style="@style/stickymarginDown"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/expandableLayout2">
+
+                </include>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/l3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@id/w3"
+                    android:background="#d9ffd7"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REGISTER"
+                        android:background="@drawable/bg_workshops"
+                        android:typeface="monospace"
+                        android:layout_weight="1"
+                        android:id="@+id/reg3" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:text="MORE ▼"
+                        android:alpha="0.8"
+                        android:id="@+id/e3"
+                        android:background="@drawable/bg_workshops"
+                        android:typeface="monospace"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/expandableLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/l3"
+
+                    app:ael_duration="600"
+                    app:ael_expanded="false"
+                    app:ael_interpolator="fastOutSlowIn"
+                    app:ael_orientation="vertical">
+
+                    <include
+                        layout="@layout/subworkshop"
+                        android:id="@+id/sub3">
+                    </include>
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

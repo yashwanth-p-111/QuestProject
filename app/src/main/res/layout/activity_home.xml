@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yashwanth.projectnothing.Home.HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- ToolBar-->
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/app_bar"></include>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/appbar"
+            android:background="#ffffff">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/img"
+                    layout="@layout/mainimage" />
+
+                <TextView
+                    android:id="@+id/mainText"
+                    style="@style/texts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/sline1"
+                    android:layout_alignStart="@+id/sline1"
+                    android:layout_below="@+id/img"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:elevation="3dp"
+                    android:padding="@dimen/padding"
+                    android:text="@string/description"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/sline1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/mainText"
+                    android:layout_margin="10dp"
+                    android:background="#c0c0c0" />
+
+                <include
+                    android:id="@+id/aboutUs"
+                    style="@style/paddings"
+                    layout="@layout/activity_base"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sline1">
+
+                </include>
+
+                <View
+                    android:id="@+id/silverLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/aboutUs"
+                    android:layout_margin="10dp"
+                    android:background="#c0c0c0" />
+
+                <TextView
+                    android:id="@+id/wsiteheader"
+                    style="@style/headers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/mainText"
+                    android:layout_alignStart="@+id/mainText"
+                    android:layout_below="@+id/silverLine"
+                    android:text="Our Website..."
+                    android:textColor="@color/colorBackground" />
+
+                <TextView
+                    android:id="@+id/wsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/wsiteheader"
+                    android:layout_alignStart="@+id/wsiteheader"
+                    android:layout_below="@+id/wsiteheader"
+                    android:layout_marginBottom="20dp"
+                    android:autoLink="web"
+                    android:text="@string/website"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="25sp" />
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            fab:menu_animationDelayPerItem="55"
+            fab:menu_backgroundColor="@android:color/transparent"
+            fab:menu_buttonSpacing="0dp"
+            fab:menu_colorNormal="@color/colorAccent"
+            fab:menu_colorPressed="#354284"
+            fab:menu_colorRipple="#9900ff6a"
+            fab:menu_fab_size="normal"
+            fab:menu_icon="@drawable/float_ic"
+            fab:menu_openDirection="up"
+            fab:menu_shadowColor="#66e8eae9"
+            fab:menu_shadowRadius="2dp"
+            fab:menu_shadowXOffset="1dp"
+            fab:menu_shadowYOffset="4dp"
+            fab:menu_showShadow="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gmail"
+                fab:fab_size="normal" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fb"
+                fab:fab_size="normal" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:src="@drawable/yt"
+                fab:fab_size="normal" />
+        </com.github.clans.fab.FloatingActionMenu>
+
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/nav_fragment"
+        android:name="com.example.yashwanth.projectnothing.Home.NavigationDrawerFragment"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/activity_navigation_drawer_fragment"
+        tools:layout="@layout/activity_navigation_drawer_fragment">
+
+    </fragment>
+</android.support.v4.widget.DrawerLayout>

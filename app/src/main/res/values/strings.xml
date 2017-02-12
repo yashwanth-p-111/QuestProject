@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">2k17</string>
+    <string name="e_mail">csequest@gmail.com</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string-array name="item_names">
+        <item>Home</item>
+        <item>Workshops</item>
+        <item>Events</item>
+        <item>Contact Us</item>
+        <item>Get Directions</item>
+        <item>Credits</item>
+    </string-array>
+    <string name="quest_title">QUéST 2k17</string>
+    <string name="quote">"Debug Urself"</string>
+    <string name="website"><u>www.csequest.com</u></string>
+    <string name="jntuSite"><u>www.jntuhceh.com</u></string>
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
+    <string name="description">Kidsworldfun.com is a free online poems resource for children, parents and teachers t
+        hat provide poems for kids by the world’s most popular poets. Our ever increasing archive of kids poems in
+        English is interesting and easy to browse. </string>
+    <string name="line">A GABFEST FOR GEEKS..</string>
+    <string name="jntuDesc">Jntu is a college Jntu is a college Jntu is a college Jntu is a collegeJntu is a collegeJntu is a collegeJntu is a college Jntu is a collegeJntu is a collegeJntu is a collegeJntu is a college</string>
+    <string name="openInWebsite"><u>Open Event in Website</u></string>
+</resources>

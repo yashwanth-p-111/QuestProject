@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_jabt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yashwanth.projectnothing.About.JAbtActivity">
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/app_bar">
+
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fcf3f3"
+        android:id="@+id/scrollView"
+      android:layout_below="@id/appbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                layout="@layout/about_common"
+                android:id="@+id/commonHeader"
+                style="@style/stickymarginDown"
+                >
+
+            </include>
+            <TextView
+                android:id="@+id/wsiteheader"
+                style="@style/headers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/commonHeader"
+                android:text="Reach us at...."
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/wsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jntuSite"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp"
+                android:autoLink="web"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@+id/wsiteheader"
+                android:layout_alignLeft="@+id/wsiteheader"
+                android:layout_alignStart="@+id/wsiteheader" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
