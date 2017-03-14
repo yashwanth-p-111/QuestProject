@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:ignore="UselessParent">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -18,12 +20,12 @@
                 style="@style/headers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/padding"
-                android:text="About QUEST"
-                android:textColor="#150260"
-                android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/padding"
+                android:text="@string/about_quest"
+                android:textColor="#150260" />
 
             <RelativeLayout
                 android:id="@+id/img"
@@ -31,13 +33,15 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/abtHeader"
                 android:background="@drawable/bg_rounds"
+                android:clickable="true"
                 android:gravity="bottom|right"
-                android:padding="3dp">
+                android:padding="3dp"
+                tools:ignore="RtlHardcoded">
 
                 <TextView
+                    android:id="@+id/imgText"
                     android:layout_width="match_parent"
                     android:layout_height="230dp"
-                    android:id="@+id/imgText"
                     android:background="@drawable/quest"></TextView>
 
             </RelativeLayout>
@@ -50,7 +54,8 @@
                 android:layout_below="@+id/img"
                 android:padding="@dimen/padding"
                 android:text="OverView"
-                android:textColor="#120c45" />
+                android:textColor="#120c45"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/abtDesc"
@@ -59,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/desc"
                 android:padding="@dimen/padding"
-                android:text="@string/w3description"
+                android:text="@string/qdescription"
                 android:textColor="#19434d" />
 
 

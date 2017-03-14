@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wmainheader"><u>WORKSHOP PROGRAMME</u></string>
+    <string name="wsubheader">The workshops are the best place where you can improve your skills  regardless of your talent you got,degree and field of study you are
+        pursuing.At JNTU every year we conduct workshops as a part of the technical fest, Quest.All you  need is nothing but
+        the curiosity to learn things.\n</string>
+    <string name="w1name">hackIT</string>
+    <string name="w1details">Hacking is not about the illegal things, its all about how to secure your cyberspace and system from attacks.
+            In this workshop cyber ethics, email hacking and security, malware attacks, windows system attacks,online data Investigation,credit card frauds &amp; Cases,playing with google by google hacking, android mobile hacking etc. topics will be covered.
+            This workshop aims to give Technocrats a basic knowledge of hacking and how to protect your system against hazardous effects.</string>
+    <string name="w1date">18-19 February</string>
+    <string name="w1highlights">* Email hacking and security\n* Information security and Digital Footprinting \n* Website Hacking and SQL Injection\n* Whatsapp Forensics and more...</string>
+    <string name="w1learn">* Certificate by Dept. of Cse,JNTUH-CEH and Sensefill Technologies\n* Softwares(Used for Ethical Hacking)\n* WordPress Tutorials from \"Lynda.com\"</string>
+    <string-array name="w1cnames">
+        <item>Umamahesh T</item>
+        <item>Tharun N</item>
+        <item>Lakshmi Prasanna</item>
+        <item>Sravan B</item>
+    </string-array>
+    <string-array name="w1cnos">
+        <item>9703282704</item>
+        <item>9533950199</item>
+        <item>9603166625</item>
+        <item>8142266033</item>
+    </string-array>
+    <string name="w1_mail">hackit.jntuh@gmail.com</string>
+    <string name="w1olink">http://www.meraevents.com/event/hackIT/118766?ucode=organizer</string>
+</resources>

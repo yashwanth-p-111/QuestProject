@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="w2name">webON</string>
+    <string name="w2details">Web Designing is the planning and creation of websites. This includes the information architecture, user interface, site structure, navigation, layout, colors, fonts, and imagery. All of these are combined with the principles of design to create a website that meets the goals of the owner and designer.\nWant to create your own website? Want a compelling design for your website? WebOn hits QUEST 2K17 for two days of learning and inspiration. Lead by a totally inspirational industry leader,we\'ll be rolling up our sleeves and knuckling down for a serious hit of web savvy ensuring a great learning environment. Hurry up and grab your chance</string>
+    <string name="w2date">18th-19th March</string>
+    <string name="w2highlights">• A 2 Day hands-on workshop from 9am to 5pm\n• WebDesign and Web Development from bacic to advance level\n• Exclusive Debugging Sessions\n• Awareness on GIT\n• On Site Q &amp; A Sessions</string>
+    <string name="w2learn">* Advanced HTML,HTML5\n* Typescript,JavaScript\n* XML,JSON\n* WebHosting and WebServices\n* LINUX-APACHE-MySQL-PHP(LAMP)</string>
+    <string-array name="w2cnames">
+        <item>Raghuram Reddy</item>
+        <item>Harry Ben Alex</item>
+        <item>Varun Reddy</item>
+        <item>Esther Priyadarshini</item>
+    </string-array>
+    <string-array name="w2cnos">
+        <item>9160528700</item>
+        <item>9666410907</item>
+        <item>9000086622</item>
+        <item>8074451932</item>
+    </string-array>
+    <string name="w2_mail">webon.jntuh@gmail.com</string>
+    <!--
+    <string name="w2reglink">https://tinyurl.com/z8ga25s</string>
+    <string name="w2olink"></string>
+    -->
+</resources>

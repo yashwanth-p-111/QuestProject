@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     style="@style/stickymarginUp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,29 +14,14 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:paddingBottom="40dp">
+            android:paddingBottom="4dp">
 
             <RelativeLayout
                 android:id="@+id/outline_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:elevation="3dp"
                 android:background="@drawable/bg_workshops"
                 android:padding="3dp">
-
-                <TextView
-                    android:id="@+id/expdetails"
-                    style="@style/texts"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_below="@+id/outline"
-                    android:layout_margin="2dp"
-                    android:padding="5dp"
-                    android:text="@string/w1details"
-                    android:textColor="#2d2d2d" />
 
                 <TextView
                     android:id="@+id/outline"
@@ -47,8 +32,22 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:text="Outline"
-                    android:textColor="#033502"
-                    android:textStyle="italic" />
+                    android:textColor="#000000"
+                    android:textStyle="normal"
+                    android:typeface="monospace" />
+
+                <TextView
+                    android:id="@+id/expdetails"
+                    style="@style/texts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/outline"
+                    android:padding="5dp"
+                    android:text="@string/w1details"
+                    android:textColor="#2d2d2d" />
 
             </RelativeLayout>
 
@@ -67,9 +66,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Highlights"
-                    android:textColor="#033502"
-
-                    android:textStyle="italic" />
+                    android:textColor="#000000"
+                    android:textStyle="normal"
+                    android:typeface="monospace" />
 
                 <TextView
                     android:id="@+id/exphighlights"
@@ -91,13 +90,13 @@
                 android:id="@+id/outcome_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/bg_workshops"
-                android:padding="3dp"
-                android:layout_below="@+id/highlights_layout"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true">
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/highlights_layout"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_workshops"
+                android:padding="3dp">
 
                 <TextView
                     android:id="@+id/outHead"
@@ -107,8 +106,9 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:text="Outcome"
-                    android:textColor="#033502"
-                    android:textStyle="italic" />
+                    android:textColor="#000000"
+                    android:textStyle="normal"
+                    android:typeface="monospace" />
 
                 <TextView
                     android:id="@+id/expoutcomes"
@@ -127,10 +127,10 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/rel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/outcome_layout"
-                android:id="@+id/rel"
                 >
 
 
@@ -139,9 +139,10 @@
                     style="@style/subheaders"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="DATE"
-                    android:textColor="#194014"
+                    android:text="DATE: "
+                    android:textColor="#000000"
                     android:textSize="20sp"
+                    android:textStyle="normal"
                     android:typeface="monospace" />
 
                 <TextView
@@ -156,32 +157,76 @@
                     android:layout_toRightOf="@+id/datetext"
                     android:padding="5dp"
                     android:text="@string/w1date"
-                    android:textColor="#763a22"
-                    android:textStyle="normal" />
-
-                <Button
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/payOnline"
-                    android:text="Pay Online"
-                    android:layout_below="@+id/con"
-                    android:layout_margin="@dimen/margin"
-                    android:padding="3dp"
-                    android:elevation="3dp"
-                    android:layout_alignRight="@+id/con"
-                    android:typeface="monospace"/>
+                    android:textColor="#0c2236"
+                    android:textStyle="normal"
+                    tools:ignore="RtlHardcoded" />
 
                 <include
+                    android:id="@+id/con"
                     layout="@layout/contacts2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/con"
-                    android:layout_marginTop="5dp"
-                    android:layout_below="@+id/datetext"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true">
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/datetext"
+                    android:layout_marginTop="5dp" />
 
-                </include>
+                <TextView
+                    android:id="@+id/regHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/addText"
+                    android:layout_below="@id/con"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Registration Fee:"
+                    android:textColor="@color/colorBackground"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded,UnknownIdInLayout" />
+
+                <TextView
+                    android:id="@+id/regfeew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/regHead"
+                    android:layout_below="@+id/addText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/regHead"
+                    android:text="1500 rs"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    tools:ignore="RtlHardcoded,UnknownIdInLayout" />
+                <Button
+                    android:id="@+id/payOnline"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/con"
+                    android:layout_below="@+id/regfeew"
+                    android:layout_margin="@dimen/margin"
+                    android:padding="3dp"
+                    android:text="Pay Online"
+                    android:typeface="monospace"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/reach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/payOnline"
+                    android:layout_margin="4dp"
+                    android:text="Reach Us at:" />
+
+                <TextView
+                    android:id="@+id/workshopLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reach"
+                    android:autoLink="web"
+                    android:text="www.csequest.com"
+                    android:textColor="#3700ff"
+                    android:textSize="16sp"
+                    android:typeface="monospace" />
             </RelativeLayout>
 
 

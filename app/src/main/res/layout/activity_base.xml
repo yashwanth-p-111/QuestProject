@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_base"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -8,39 +9,28 @@
 
     <ScrollView
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/headers"
-            android:padding="@dimen/padding"
-
-            android:textColor="@color/colorBackground"
-            android:text="About Us"
-
-            android:id="@+id/aHead"/>
 
         <include
+            android:id="@+id/abtQ"
             layout="@layout/withimage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:id="@+id/abtQ"
             android:layout_below="@+id/abtJ"
+            android:layout_marginTop="30dp"
             >
 
         </include>
 
         <include
+            android:id="@+id/abtJ"
             layout="@layout/withimage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:id="@+id/abtJ"
-            android:layout_below="@+id/aHead"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true">
 

@@ -1,25 +1,39 @@
 <resources>
-    <string name="app_name">2k17</string>
-    <string name="e_mail">csequest@gmail.com</string>
-    <string name="title_activity_home">HomeActivity</string>
+    <string name="app_name">#Quest-2017</string>
+    <string name="e_mail">quest.cse@jntuh.ac.in</string>
+    <string name="title_activity_home">Quest 2017</string>
     <string-array name="item_names">
         <item>Home</item>
         <item>Workshops</item>
         <item>Events</item>
         <item>Contact Us</item>
         <item>Get Directions</item>
-        <item>Credits</item>
+        <item>Developer Credits</item>
     </string-array>
-    <string name="quest_title">QUéST 2k17</string>
     <string name="quote">"Debug Urself"</string>
     <string name="website"><u>www.csequest.com</u></string>
-    <string name="jntuSite"><u>www.jntuhceh.com</u></string>
+    <string name="jntuSite"><u>www.jntuhceh.ac.in</u></string>
     <string name="open">OPEN</string>
     <string name="close">CLOSE</string>
-    <string name="description">Kidsworldfun.com is a free online poems resource for children, parents and teachers t
-        hat provide poems for kids by the world’s most popular poets. Our ever increasing archive of kids poems in
-        English is interesting and easy to browse. </string>
-    <string name="line">A GABFEST FOR GEEKS..</string>
-    <string name="jntuDesc">Jntu is a college Jntu is a college Jntu is a college Jntu is a collegeJntu is a collegeJntu is a collegeJntu is a college Jntu is a collegeJntu is a collegeJntu is a collegeJntu is a college</string>
-    <string name="openInWebsite"><u>Open Event in Website</u></string>
+    <string name="description">Voila! The most excitedly awaited National level Gabfest, Quest is back after an year long halt with the most appealing loads of intriguing Events (Coding, Presentations , And many On-Spot events),Workshops and  other technical stuff.Witness the fest by taking part in various flashy activities and upgrade your knowledge.</string>
+    <string name="jntuDesc">Situated at the heart of Hyderabad,Jawaharlal Nehru Technological University College of Engineering(Autonomous)
+			has been providing top notch education to students since 1965.
+			The infrastructure development in the past two decades in the college has been prominent.
+			An accredited, comprehensive college, JNTUH CEH offers active learning in a vibrant atmosphere where students connect the classroom and their world.
+			With a focus on innovative ideas along with curricular education. The nurturing environment offers
+			education combined with practical experiences such as internships, academic and career counseling and volunteer opportunities.
+			To meet the essential requirements for strengthening theutility of its programs, the college has developed its own
+			infrastructure and services of the high quality, novel thoughts and practical approach. With the cooperation of the
+			Faculty and other staff members, the institution is now capable to impart quality education for more than thousands
+			students per year. At JNTUH CEH, we believe in making our students ready for the future,today.</string>
+    <string name="prevspon"><u>Previous Sponsors :</u></string>
+    <string name="qdescription">Ever since its inception, Quest has made a name for itself as an avant-garde technical festival, showcasing innovations in thefields of science and technology.
+			With this two day long event, we bring to you a conglomerate of unique ideas,
+			competent skill and unlimited fun. Through its plethora of competitions, lectures and workshops, Quest strives
+			to ignite the minds of the students visiting the festival.From challenging the coder in you at all the coding events
+			to bringing out the scholar in you at Paper presentations, the events are designed to tech-train young minds. We,
+			the student community at Computer Science Department of JNTUH invite you to celebrate mutual passion and common
+			thirst for knowledge. Meet like minded tech lovers and think beyond normal.Be a part of Quest and experience
+			the ardour, for this is an event that truly justifies its name. And this time, its going to be the best ever.</string>
+    <string name="about_quest">About QUEST</string>
 </resources>

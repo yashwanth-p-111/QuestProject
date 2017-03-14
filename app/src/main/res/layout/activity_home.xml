@@ -6,12 +6,12 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.yashwanth.projectnothing.Home.HomeActivity">
-
+    tools:context="com.deviloper.yashwanth.projectnothing.com.anddev.yashwanth.projectnothing.Home.HomeActivity">
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:clickable="true">
         <!-- ToolBar-->
         <include
             android:id="@+id/appbar"
@@ -25,7 +25,8 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@id/appbar"
-            android:background="#ffffff">
+            android:background="#ffffff"
+            android:clickable="true">
 
 
             <RelativeLayout
@@ -34,22 +35,30 @@
 
                 <include
                     android:id="@+id/img"
-                    layout="@layout/mainimage" />
+                    layout="@layout/mainhead" />
 
+                <View
+                    android:id="@+id/sline0"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/img"
+                    android:layout_margin="10dp"
+                    android:background="#c0c0c0" />
                 <TextView
                     android:id="@+id/mainText"
                     style="@style/texts"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/sline1"
-                    android:layout_alignStart="@+id/sline1"
-                    android:layout_below="@+id/img"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/sline0"
                     android:clickable="true"
                     android:focusable="true"
-                    android:elevation="3dp"
-                    android:padding="@dimen/padding"
+                    android:includeFontPadding="false"
+                    android:padding="10dp"
                     android:text="@string/description"
                     android:textColor="@color/text_color"
+                    android:textScaleX="0.9"
                     android:textSize="20sp" />
 
                 <View
@@ -58,23 +67,105 @@
                     android:layout_height="1dp"
                     android:layout_below="@id/mainText"
                     android:layout_margin="10dp"
+                    android:background="#940822" />
+
+                <TextView
+                    android:id="@+id/eh"
+                    style="@style/headers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sline1"
+                    android:layout_marginLeft="20dp"
+                    android:text="Events" />
+                <include
+                    android:id="@+id/homeEvent"
+                    style="@style/paddings"
+                    layout="@layout/withimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/eh" />
+
+                <TextView
+                    android:id="@+id/wh"
+                    style="@style/headers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/homeEvent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Workshops" />
+
+                <include
+                    android:id="@+id/homeWork"
+                    style="@style/paddings"
+                    layout="@layout/withimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/wh" />
+
+                <View
+                    android:id="@+id/eventline"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/homeWork"
+                    android:layout_margin="10dp"
+                    android:background="#940822" />
+
+                <Button
+                    android:id="@+id/butt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/eventline"
+                    android:layout_margin="10dp"
+                    android:background="@color/colorAccent"
+                    android:text="About Us"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+                    android:typeface="monospace"
+                    tools:ignore="HardcodedText" />
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/expandableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/butt"
+                    app:ael_duration="600"
+                    app:ael_expanded="false"
+                    app:ael_interpolator="fastOutSlowIn"
+                    app:ael_orientation="vertical">
+
+                    <include
+                        android:id="@+id/aboutUs"
+                        style="@style/paddings"
+                        layout="@layout/activity_base"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </include>
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                <View
+                    android:id="@+id/viewx"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/expandableLayout"
+                    android:layout_margin="10dp"
                     android:background="#c0c0c0" />
 
                 <include
-                    android:id="@+id/aboutUs"
+                    android:id="@+id/sponsors"
                     style="@style/paddings"
-                    layout="@layout/activity_base"
-                    android:layout_width="wrap_content"
+                    layout="@layout/sponsors_layout"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/sline1">
-
-                </include>
+                    android:layout_below="@id/viewx" />
 
                 <View
                     android:id="@+id/silverLine"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_below="@id/aboutUs"
+                    android:layout_below="@id/sponsors"
                     android:layout_margin="10dp"
                     android:background="#c0c0c0" />
 
@@ -86,8 +177,10 @@
                     android:layout_alignLeft="@+id/mainText"
                     android:layout_alignStart="@+id/mainText"
                     android:layout_below="@+id/silverLine"
+                    android:layout_marginLeft="10dp"
                     android:text="Our Website..."
-                    android:textColor="@color/colorBackground" />
+                    android:textColor="@color/colorBackground"
+                    tools:ignore="RtlHardcoded" />
 
                 <TextView
                     android:id="@+id/wsite"
@@ -124,11 +217,12 @@
             fab:menu_fab_size="normal"
             fab:menu_icon="@drawable/float_ic"
             fab:menu_openDirection="up"
-            fab:menu_shadowColor="#66e8eae9"
+            fab:menu_shadowColor="#66525353"
             fab:menu_shadowRadius="2dp"
             fab:menu_shadowXOffset="1dp"
             fab:menu_shadowYOffset="4dp"
-            fab:menu_showShadow="true">
+            fab:menu_showShadow="true"
+            tools:ignore="RelativeOverlap">
 
             <com.github.clans.fab.FloatingActionButton
                 android:id="@+id/fab3"
@@ -158,7 +252,7 @@
 
     <fragment
         android:id="@+id/nav_fragment"
-        android:name="com.example.yashwanth.projectnothing.Home.NavigationDrawerFragment"
+        android:name="com.deviloper.yashwanth.projectnothing.Home.NavigationDrawerFragment"
         android:layout_width="260dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"

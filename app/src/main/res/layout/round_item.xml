@@ -1,32 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/paddings"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    style="@style/paddings"
-    android:clickable="true"
     android:background="@drawable/bg_rounds"
-    android:elevation="3dp"
+    android:clickable="true"
     android:foreground="?attr/selectableItemBackground"
     >
 
     <TextView
-        android:text="Headingssss"
+        android:id="@+id/roundHeader"
+        style="@style/subheaders"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        style="@style/subheaders"
-        android:id="@+id/roundHeader" />
+        android:layout_alignParentTop="true"
+        android:text="Headingssss" />
 
     <TextView
-        android:text="description"
+        android:id="@+id/roundDescription"
         style="@style/texts"
-        android:textColor="#2f2f2f"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:maxLines="30"
         android:layout_below="@+id/roundHeader"
         android:layout_marginTop="5dp"
-        android:id="@+id/roundDescription" />
+        android:text="description"
+        android:textColor="#2f2f2f" />
 </RelativeLayout>

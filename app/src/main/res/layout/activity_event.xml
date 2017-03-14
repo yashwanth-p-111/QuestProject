@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#fae3e3"
 
-    tools:context="com.example.yashwanth.projectnothing.EventCode.EventActivity">
+    tools:context="com.deviloper.yashwanth.projectnothing.com.anddev.yashwanth.projectnothing.EventCode.EventActivity">
 
         <include
             android:id="@+id/appbar"
@@ -16,28 +16,28 @@
         </include>
 
         <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/recyclerView"
-            android:layout_below="@+id/appbar"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/appbar">
         </android.support.v7.widget.RecyclerView>
 
         <TextView
-            android:text="Err..."
+            android:id="@+id/errView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/recyclerView"
-            android:textSize="40sp"
-            android:textStyle="bold"
-            android:foregroundGravity="center"
-            android:gravity="center"
-            android:textColor="#ff0000"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="60dp"
-            android:visibility="gone"
-            android:id="@+id/errView" />
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Err...\nActive Connection Required to Fetch Events"
+            android:textColor="#ff0000"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
 
 
 </RelativeLayout>

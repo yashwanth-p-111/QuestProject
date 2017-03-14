@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
 
     android:layout_height="match_parent"
-    tools:context="com.example.yashwanth.projectnothing.About.QAbtActivity">
+    tools:context="com.deviloper.yashwanth.projectnothing.com.anddev.yashwanth.projectnothing.About.QAbtActivity">
     <include
         android:id="@+id/appbar"
         layout="@layout/app_bar">
@@ -16,19 +16,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#bdd9e8fc"
-        android:layout_below="@+id/appbar"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/appbar"
+        android:background="#bdd9e8fc">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <include
-                android:layout_height="match_parent"
-                android:layout_width="match_parent"
-                layout="@layout/about_common"
                 android:id="@+id/commonHeader"
-                style="@style/stickymarginDown">
+                style="@style/stickymarginDown"
+                layout="@layout/about_common"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
             </include>
 
@@ -39,22 +39,24 @@
                 android:layout_height="wrap_content"
                 android:layout_alignLeft="@+id/mainText"
                 android:layout_below="@+id/commonHeader"
-                android:text="Reach us at...."
                 android:layout_marginLeft="10dp"
-                android:textColor="#06162b" />
+                android:text="Reach us at...."
+                android:textColor="#06162b"
+                tools:ignore="RtlHardcoded,UnknownIdInLayout" />
 
             <TextView
                 android:id="@+id/wsite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/wsiteheader"
+                android:layout_alignStart="@+id/wsiteheader"
+                android:layout_below="@+id/wsiteheader"
+                android:layout_marginBottom="20dp"
+                android:autoLink="web"
                 android:text="@string/website"
                 android:textColor="@color/colorAccent"
                 android:textSize="30dp"
-                android:layout_below="@+id/wsiteheader"
-                android:layout_alignLeft="@+id/wsiteheader"
-                android:layout_alignStart="@+id/wsiteheader"
-                android:autoLink="web"
-                android:layout_marginBottom="20dp"/>
+                tools:ignore="SpUsage" />
         </RelativeLayout>
     </ScrollView>
 

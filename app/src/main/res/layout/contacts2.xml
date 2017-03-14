@@ -1,127 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     style="@style/paddings"
-    android:background="@drawable/bg_rounds"
-    android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_workshops">
 
     <TextView
-        android:text="Contacts"
+        android:id="@+id/contacts"
+        style="@style/headers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:textColor="#0a1801"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        style="@style/headers"
-        android:id="@+id/contacts" />
+        android:layout_alignParentTop="true"
+        android:text="Contacts"
+        android:textColor="#0a1801" />
 <View
+    android:id="@+id/v1"
     android:layout_width="match_parent"
     android:layout_height="1dp"
-    android:id="@+id/v1"
     android:layout_below="@id/contacts"
     android:background="#cacaca"/>
     <TextView
-        android:text="TextView"
+        android:id="@+id/name1"
         android:layout_width="wrap_content"
-        style="@style/texts"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/v1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/v1"
         android:layout_marginTop="10dp"
-        android:id="@+id/name1" />
+        android:text="TextView"
+        android:textColor="@color/colorBackground"
+        android:textSize="18sp" />
 
     <TextView
-        android:text="TextView"
-        android:textSize="15dp"
-        android:autoLink="phone"
+        android:id="@+id/no1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/name1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/no1" />
+        android:layout_below="@+id/name1"
+        android:autoLink="phone"
+        android:text="TextView"
+        android:textColorLink="#0e1845"
+        android:textSize="15sp" />
     <View
+        android:id="@+id/v2"
         android:layout_width="match_parent"
         android:layout_height="0.8dp"
-        android:id="@+id/v2"
         android:layout_below="@id/no1"
         android:background="#cacaca"/>
     <TextView
-        android:text="TextView"
-        style="@style/texts"
+        android:id="@+id/name2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/v2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/v2"
         android:layout_marginTop="5dp"
-        android:id="@+id/name2" />
+        android:text="TextView"
+        android:textColor="@color/colorBackground"
+        android:textSize="18sp" />
 
     <TextView
-        android:text="TextView"
-        android:textSize="15dp"
-        android:autoLink="phone"
+        android:id="@+id/no2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/name2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/no2" />
+        android:layout_below="@+id/name2"
+        android:autoLink="phone"
+        android:text="TextView"
+        android:textColorLink="#0e1845"
+        android:textSize="15sp" />
     <View
+        android:id="@+id/v3"
         android:layout_width="match_parent"
         android:layout_height="0.8dp"
-        android:id="@+id/v3"
         android:layout_below="@id/no2"
         android:background="#cacaca"/>
     <TextView
-        android:text="TextView"
-        style="@style/texts"
+        android:id="@+id/name3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/v3"
         android:layout_marginTop="5dp"
 
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/name3" />
+        android:text="TextView"
+        android:textColor="@color/colorBackground"
+        android:textSize="18sp" />
 
     <TextView
-        android:text="TextView"
+        android:id="@+id/no3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15dp"
+        android:layout_below="@+id/name3"
         android:autoLink="phone"
-        android:id="@+id/no3"
-        android:layout_below="@+id/name3" />
+        android:text="TextView"
+        android:textColorLink="#0e1845"
+        android:textSize="15dp"
+        tools:ignore="SpUsage" />
     <View
+        android:id="@+id/v4"
         android:layout_width="match_parent"
         android:layout_height="0.8dp"
-        android:id="@+id/v4"
         android:layout_below="@id/no3"
         android:background="#cacaca"/>
     <TextView
-        android:text="TextView"
+        android:id="@+id/name4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        style="@style/texts"
-        android:layout_below="@+id/v4"
         android:layout_alignParentLeft="true"
-        android:layout_marginTop="5dp"
         android:layout_alignParentStart="true"
-        android:id="@+id/name4" />
+        android:layout_below="@+id/v4"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textColor="@color/colorBackground"
+        android:textSize="18sp" />
 
     <TextView
-        android:text="TextView"
+        android:id="@+id/no4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/name4"
-        android:textSize="15dp"
-        android:autoLink="phone"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/no4" />
+        android:layout_below="@+id/name4"
+        android:autoLink="phone"
+        android:text="TextView"
+        android:textColorLink="#0e1845"
+        android:textSize="15dp"
+        tools:ignore="SpUsage" />
+
+    <View
+        android:id="@+id/v5"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_below="@id/no4"
+        android:layout_marginTop="5dp"
+        android:background="#505050" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/texts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/no4"
+        android:layout_marginTop="5dp"
+        android:text="mail:" />
+
+    <TextView
+        android:id="@+id/contMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:autoLink="email"
+        android:text="TextView"
+        android:textColorLink="#B71C1C"
+        android:textSize="17sp" />
+
 
 </RelativeLayout>

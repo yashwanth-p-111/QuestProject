@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-   android:layout_margin="@dimen/margin"
-    android:clickable="true"
-    android:id="@+id/layout"
+    android:layout_margin="@dimen/margin"
     android:background="@drawable/bg_layout"
+    android:clickable="true"
     android:foreground="?attr/selectableItemBackground">
 
     <TextView
-        android:text="EVENT #0"
+        android:id="@+id/workno1"
+        style="@style/subheaders"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_margin="5dp"
-        style="@style/subheaders"
-        android:id="@+id/workno1" />
+        android:text="EVENT #0" />
 
     <TextView
-        android:text="JUMBLE DUMBLE"
-        android:layout_margin="5dp"
+        android:id="@+id/wname1"
+        style="@style/headers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/workno1"
         android:layout_alignLeft="@+id/workno1"
         android:layout_alignStart="@+id/workno1"
+        android:layout_below="@+id/workno1"
+        android:layout_margin="5dp"
         android:layout_marginTop="5dp"
-        android:textSize="25sp"
-        style="@style/headers"
+        android:text="JUMBLE DUMBLE"
         android:textColor="#a41100"
-        android:id="@+id/wname1" />
+        android:textSize="25sp" />
 
     <TextView
+        android:id="@+id/eventDescription"
         style="@style/texts"
-        android:textColor="#763a22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/wname1"
-        android:layout_margin="5dp"
-        android:fontFamily="sans-serif-smallcaps"
         android:layout_alignLeft="@+id/wname1"
         android:layout_alignStart="@+id/wname1"
+        android:layout_below="@+id/wname1"
+        android:layout_margin="5dp"
         android:layout_marginTop="5dp"
-        android:id="@+id/eventDescription"
-        android:text="@string/w1description" />
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Dummy text"
+        android:textColor="#763a22" />
      <Button
-         android:layout_width="match_parent"
-         android:textSize="17dp"
          android:id="@+id/nextBtn"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/eventDescription"
          android:alpha="0.4"
          android:fontFamily="serif-monospace"
-         android:text="know more   ►►►"
          android:gravity="bottom|end"
-         android:layout_height="wrap_content"
-         android:layout_below="@+id/eventDescription"/>
+         android:text="know more   ►►►"
+         android:textSize="17dp" />
 </RelativeLayout>

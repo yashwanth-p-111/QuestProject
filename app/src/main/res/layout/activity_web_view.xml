@@ -2,9 +2,9 @@
 <WebView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/webview"
+    style="@style/paddings"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@style/paddings"
-    tools:context="com.example.yashwanth.projectnothing.Otherjavafiles.WebViewActivity">
+    tools:context="com.deviloper.yashwanth.projectnothing.com.anddev.yashwanth.projectnothing.Otherjavafiles.WebViewActivity">
 
 </WebView>

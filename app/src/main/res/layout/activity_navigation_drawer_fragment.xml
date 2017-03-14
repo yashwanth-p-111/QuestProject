@@ -2,36 +2,36 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_drawer_fragment"
-    android:focusable="true"
-    android:clickable="true"
     android:layout_width="match_parent"
-    android:background="#f1f1f1"
     android:layout_height="match_parent"
-    tools:context="com.example.yashwanth.projectnothing.Home.NavigationDrawerFragment">
+    android:background="#f1f1f1"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context="com.deviloper.yashwanth.projectnothing.com.anddev.yashwanth.projectnothing.Home.NavigationDrawerFragment">
     <LinearLayout
+        android:id="@+id/linear_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linear_layout">
+        android:layout_height="wrap_content">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="200dp"
-           android:src="@drawable/logo"
             android:padding="10dp"
-            >
+            android:src="@drawable/logo"
+            tools:ignore="ContentDescription">
 
         </ImageView>
     </LinearLayout>
 
     <ListView
-        android:layout_width="match_parent"
         android:id="@+id/drawer_list"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:elevation="3dp"
-        android:padding="10dp"
-        android:layout_below="@id/linear_layout"
-        android:entries="@array/item_names"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@id/linear_layout"
+        android:layout_centerHorizontal="true"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/item_names"
+        android:padding="10dp" />
 
 
 </RelativeLayout>

@@ -5,9 +5,7 @@
     android:id="@+id/activity_workshop"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-
-    tools:context="com.example.yashwanth.projectnothing.Otherjavafiles.WorkshopActivity">
+    tools:context="com.deviloper.yashwanth.projectnothing.Otherjavafiles.WorkshopActivity">
 
     <include
         android:id="@+id/appbar"
@@ -18,17 +16,16 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/appbar"
         android:layout_alignParentStart="true"
-
-        >
+        android:layout_below="@id/appbar">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingBottom="30dp"
-            android:background="#e7f1faef"
+            android:background="#ffffff"
+            android:paddingBottom="5dp"
             >
 
             <TextView
@@ -36,68 +33,79 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/wmainheader"
+                android:textColor="#203814"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:layout_marginTop="10dp"
-                android:textColor="#203814"
-                android:text="@string/wmainheader" />
+                tools:ignore="RtlHardcoded" />
 
             <TextView
                 android:id="@+id/workView"
-                android:textStyle="normal"
-                android:textSize="18dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/workHead"
-                 android:layout_margin="10dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:text="@string/wsubheader"
                 android:textColor="#000000"
-                android:text="@string/wsubheader" />
+                android:textSize="18dp"
+                android:textStyle="normal"
+                tools:ignore="SpUsage" />
 
+            <View
+                android:id="@+id/sep1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/workView"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="#FF0A7033" />
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_alignParentLeft="true"
-
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/workView">
+                android:layout_below="@+id/sep1">
                 <include
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent"
-                    layout="@layout/withimage"
                     android:id="@+id/w1"
-                    style="@style/stickymarginDown">
+                    style="@style/stickymarginDown"
+                    layout="@layout/withimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                 </include>
                 <LinearLayout
-                    android:layout_width="match_parent"
                     android:id="@+id/l1"
-                 android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_below="@id/w1"
-                    android:background="#d9ffd7"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    >
+                    android:layout_below="@id/w1"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp">
 
                     <Button
-                        android:layout_width="wrap_content"
+                        android:id="@+id/reg1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="REGISTER"
-                        android:background="@drawable/bg_workshops"
-                        android:typeface="monospace"
                         android:layout_weight="1"
-                        android:id="@+id/reg1" />
+                        android:text="REGISTER"
+
+                        android:textColor="#000000"
+                        android:typeface="monospace"
+                        tools:ignore="ButtonStyle" />
 
                     <Button
-                        android:layout_width="wrap_content"
+                        android:id="@+id/e1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="MORE ▼"
                         android:textColor="#000000"
                         android:textSize="16sp"
-                        android:text="MORE ▼"
-                        android:id="@+id/e1"
-                        android:alpha="0.8"
-                        android:background="@drawable/bg_workshops"
                         android:typeface="monospace"
-                        android:layout_weight="1"/>
+                        tools:ignore="ButtonStyle" />
 
                 </LinearLayout>
 
@@ -110,53 +118,63 @@
 
                     app:ael_duration="600"
                     app:ael_expanded="false"
-                    app:ael_interpolator="fastOutSlowIn"
+                    app:ael_interpolator="linearOutSlowIn"
                     app:ael_orientation="vertical">
 
                     <include
-                        layout="@layout/subworkshop"
-                        android:id="@+id/sub1">
+                        android:id="@+id/sub1"
+                        layout="@layout/subworkshop">
                     </include>
                 </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                <View
+                    android:id="@+id/sep2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/expandableLayout"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#FF0A7033" />
                 <include
                     android:id="@+id/w2"
-                    layout="@layout/withimage"
                     style="@style/stickymarginDown"
+                    layout="@layout/withimage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/expandableLayout">
+                    android:layout_below="@id/sep2">
 
                 </include>
                 <LinearLayout
-                    android:layout_width="match_parent"
                     android:id="@+id/l2"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_below="@id/w2"
-                    android:background="#d9ffd7"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/w2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
                     >
 
                     <Button
+                        android:id="@+id/reg2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="REGISTER"
-                        android:background="@drawable/bg_workshops"
-                        android:typeface="monospace"
                         android:layout_weight="1"
-                        android:id="@+id/reg2" />
+                        android:text="REGISTER"
+                        android:textColor="#000000"
+                        android:typeface="monospace"
+                        tools:ignore="ButtonStyle" />
 
                     <Button
+                        android:id="@+id/e2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="MORE ▼"
                         android:textColor="#000000"
                         android:textSize="16sp"
-                        android:text="MORE ▼"
-                        android:id="@+id/e2"
-                        android:alpha="0.8"
-                        android:background="@drawable/bg_workshops"
                         android:typeface="monospace"
-                        android:layout_weight="1"/>
+                        tools:ignore="ButtonStyle" />
 
                 </LinearLayout>
 
@@ -167,54 +185,62 @@
                     android:layout_below="@+id/l2"
                     app:ael_duration="600"
                     app:ael_expanded="false"
-                    app:ael_interpolator="fastOutSlowIn"
+                    app:ael_interpolator="linearOutSlowIn"
                     app:ael_orientation="vertical">
 
                     <include
-                        layout="@layout/subworkshop"
-                        android:id="@+id/sub2">
+                        android:id="@+id/sub2"
+                        layout="@layout/subworkshop">
                     </include>
                 </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
+                <View
+                    android:id="@+id/sep3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/expandableLayout2"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#FF0A7033" />
                 <include
                     android:id="@+id/w3"
+                    style="@style/stickymarginDown"
                     layout="@layout/withimage"
                     android:layout_width="match_parent"
-                    style="@style/stickymarginDown"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/expandableLayout2">
+                    android:layout_below="@+id/sep3">
 
                 </include>
                 <LinearLayout
-                    android:layout_width="match_parent"
                     android:id="@+id/l3"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_below="@id/w3"
-                    android:background="#d9ffd7"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/w3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
                     >
 
                     <Button
+                        android:id="@+id/reg3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="REGISTER"
-                        android:background="@drawable/bg_workshops"
-                        android:typeface="monospace"
                         android:layout_weight="1"
-                        android:id="@+id/reg3" />
+                        android:text="REGISTER"
+                        android:typeface="monospace"
+                        tools:ignore="ButtonStyle" />
 
                     <Button
+                        android:id="@+id/e3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="MORE ▼"
                         android:textColor="#000000"
                         android:textSize="16sp"
-                        android:text="MORE ▼"
-                        android:alpha="0.8"
-                        android:id="@+id/e3"
-                        android:background="@drawable/bg_workshops"
                         android:typeface="monospace"
-                        android:layout_weight="1"/>
+                        tools:ignore="ButtonStyle" />
 
                 </LinearLayout>
 
@@ -225,13 +251,13 @@
                     android:layout_below="@+id/l3"
 
                     app:ael_duration="600"
-                    app:ael_expanded="false"
-                    app:ael_interpolator="fastOutSlowIn"
+                    app:ael_expanded="true"
+                    app:ael_interpolator="linearOutSlowIn"
                     app:ael_orientation="vertical">
 
                     <include
-                        layout="@layout/subworkshop"
-                        android:id="@+id/sub3">
+                        android:id="@+id/sub3"
+                        layout="@layout/subworkshop">
                     </include>
                 </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 

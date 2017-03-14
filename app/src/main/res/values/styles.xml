@@ -14,7 +14,8 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
     <!-- texts-->
     <style name="texts">
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textScaleX">0.9</item>
         <item name="android:typeface">monospace</item>
         <item name="android:lineSpacingExtra">3dp</item>
         <item name="android:textColor">#2d2d2d</item>
@@ -24,7 +25,7 @@
 
     <!-- headings-->
     <style name="headers">
-        <item name="android:textSize">25dp</item>
+        <item name="android:textSize">25sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">#2d2d2d</item>
     </style>

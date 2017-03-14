@@ -1,75 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.yashwanth.projectnothing">
+    package="com.deviloper.yashwanth.projectnothing">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
 
     <application
-        android:name=".EventCode.MyApplication"
+        android:name="com.deviloper.yashwanth.projectnothing.EventCode.MyApplication"
         android:allowBackup="true"
-        android:largeHeap="true"
         android:icon="@drawable/logo"
+        android:installLocation="preferExternal"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Home.SplashScreenActivity"
-            android:screenOrientation="portrait"
-           >
+        <activity
+            android:name="com.deviloper.yashwanth.projectnothing.Home.SplashScreenActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <!--
+            <intent-filter >
+                <data android:scheme="questapp"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        -->
         </activity>
-        <activity android:name=".Home.HomeActivity"
-            android:hardwareAccelerated="true">
 
-        </activity>
+        <service android:name="com.deviloper.yashwanth.projectnothing.Home.FirebaseInstIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.deviloper.yashwanth.projectnothing.Home.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
         <activity
-            android:name=".Otherjavafiles.WorkshopActivity"
-            android:launchMode="singleTop"
+            android:name="com.deviloper.yashwanth.projectnothing.Home.HomeActivity"
+            android:hardwareAccelerated="true"
+            android:label="Quest 2017"
+            android:launchMode="singleTop"></activity>
+        <activity
+            android:name="com.deviloper.yashwanth.projectnothing.Otherjavafiles.WorkshopActivity"
             android:label="   Workshops">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Home.HomeActivity" />
+                android:value="com.deviloper.yashwanth.projectnothing.Home.HomeActivity" />
         </activity>
         <activity
-            android:name=".EventCode.EventActivity"
+            android:name="com.deviloper.yashwanth.projectnothing.EventCode.EventActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="   Events"
-            android:launchMode="singleTop">
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Home.HomeActivity" />
+                android:value="com.deviloper.yashwanth.projectnothing.Home.HomeActivity" />
         </activity>
-        <activity android:name=".EventCode.EventTemplateActivity">
+        <activity android:name="com.deviloper.yashwanth.projectnothing.EventCode.EventTemplateActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".EventCode.EventActivity" />
+                android:value="com.deviloper.yashwanth.projectnothing.EventCode.EventActivity" />
         </activity>
         <activity
-            android:name=".About.ContactsActivity"
+            android:name="com.deviloper.yashwanth.projectnothing.About.ContactsActivity"
             android:label="Coordinator Contacts">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Home.HomeActivity" />
+                android:value="com.deviloper.yashwanth.projectnothing.Home.HomeActivity" />
         </activity>
         <activity
-            android:name=".About.JAbtActivity"
+            android:name="com.deviloper.yashwanth.projectnothing.About.JAbtActivity"
             android:label="   JNTUHCEH">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".About.ContactsActivity" />
+                android:value="com.deviloper.yashwanth.projectnothing.About.ContactsActivity" />
         </activity>
         <activity
-            android:name=".About.QAbtActivity"
+            android:name="com.deviloper.yashwanth.projectnothing.About.QAbtActivity"
             android:label="   QUEST">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".About.ContactsActivity" />
+                android:value="com.deviloper.yashwanth.projectnothing.About.ContactsActivity" />
         </activity>
-        <activity android:name=".Otherjavafiles.WebViewActivity" />
-
+        <activity android:name="com.deviloper.yashwanth.projectnothing.Otherjavafiles.WebViewActivity" />
+        <activity android:name="com.deviloper.yashwanth.projectnothing.About.Credits"></activity>
     </application>
 
 </manifest>
